@@ -11,3 +11,53 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+
+  /* Border Colors are all transparent colors. These will tint or shade the background color of the square. */
+  --border-color: #00ff00;
+  --border-top-color: #00ff00;
+  --border-right-color: #00ff00;
+  --border-bottom-color: #00ff00;
+
+
+  /* Numbers define values that will be used throughout the CSS.
+  --tile-size: 20px for example will set size of the grid squares. */
+  --cols: 20;
+  --rows: 30;
+  --tile-size: 50px;
+  --border-width: 1px;
+}
+
+/* Colors */
+.color-0 {
+  background-color: transparent;
+}
+
+/* Grid */
+.grid-board {
+  display: inline-grid;
+  grid-template-columns: repeat(var(--cols), var(--tile-size));
+  grid-gap: 0;
+  align-self: flex-start;
+  background-color: #000;
+  top: calc(25 * 10px);
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Square */
+.grid-square {
+  border-style: solid;
+  width: var(--tile-size);
+  height: var(--tile-size);
+  border-width: var(--border-width);
+  border-left-color: var(--border-left-color);
+  border-top-color: var(--border-top-color);
+  border-right-color: var(--border-right-color);
+  border-bottom-color: var(--border-bottom-color);
+}
+
