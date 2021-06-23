@@ -25,12 +25,12 @@ code {
   --tile-size: 20px for example will set size of the grid squares. */
   --cols: 20;
   --rows: 30;
-  --tile-size: 50px;
+  --tile-size: 60px;
   --border-width: 1px;
 }
 
 /* Colors */
-.color-0 {
+.square-color {
   background-color: transparent;
 }
 
@@ -43,6 +43,7 @@ code {
   background-color: #000;
   top: calc(25 * 10px);
   position: relative;
+  color: #fff;
 }
 
 * {
@@ -59,5 +60,17 @@ code {
   border-top-color: var(--border-top-color);
   border-right-color: var(--border-right-color);
   border-bottom-color: var(--border-bottom-color);
+}
+
+.rover {
+  background-color: #00ff00; /* defines the background color of the image */
+  mask: url('./img/mars-rover.svg') no-repeat center / contain;
+  -webkit-mask: url('./img/mars-rover.svg') no-repeat center / contain;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  margin: 12px;
 }
 

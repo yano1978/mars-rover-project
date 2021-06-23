@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default function Square(props) {
-  const classes = `grid-square color-${props.color}`
-  return <div className={classes} />
+class Square extends Component {
+
+  render() {
+    return ( 
+      <div className="grid-square square-color">
+      </div>
+    );
+  }
 }
+
+export default Square;
