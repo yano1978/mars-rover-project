@@ -1,25 +1,10 @@
-import React from 'react';
+import React from "react";
 
-export default function Rover(props) {
-    // console.log(props);
-    const [style] = React.useState(props);
+class Rover extends React.Component {
+    render() {
+        const { facing, ghost } = this.props;
+        return <span className={`rover ${facing} ${ghost ? 'ghost' : ''} `}>🛦</span>
+    }
+};
 
-    // const [style, setStyle] = React.useState(props);
-    // const setCoordinates = (x, y, e) => {
-    //     console.log(e.target);
-    //     return `left:${x}px;top:${y}px;`;
-    // }
-    
-    return (
-        <>
-        <div
-            {...style}
-            // onClick={e => {
-            //     const newStyle = setCoordinates(e.target.getBoundingClientRect().x, e.target.getBoundingClientRect().y, e);
-            //     setStyle(newStyle);
-            // }}
-            className="icon rover">
-        </div>
-        </>
-    )
-}
+export default Rover;
