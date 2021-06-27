@@ -31,6 +31,6 @@ $ npm start
 To run all tests:
 
 ```
-$ npm test > a
+$ npm test
 
 ```
