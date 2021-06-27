@@ -26,3 +26,11 @@ To run the project locally:
 $ npm start
 
 ```
+
+## Test
+To run all tests:
+
+```
+$ npm test > a
+
+```
